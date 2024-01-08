@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+
+		<PackageReference Include="Azure.Security.KeyVault.Certificates" Version="4.4.0" />
+		<PackageReference Include="Azure.Security.KeyVault.Keys" Version="4.4.0" />
+		<PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.4.0" />
+		<PackageReference Include="Duende.IdentityServer" Version="6.0.4" />
+		<PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="6.0.4" />
+		<PackageReference Include="Duende.IdentityServer.EntityFramework" Version="6.0.4" />
+		<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.1" />
+		<PackageReference Include="FluentValidation" Version="10.3.1" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="10.3.1" />
+		<PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+		<PackageReference Include="MediatR" Version="9.0.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.1" />
+		<PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="6.0.1" />
+		<PackageReference Include="ONE.Shared.Infrastructure" Version="0.1.199-CI-20231009-115350" />
+		<PackageReference Include="ONE.Shared.Infrastructure.Web" Version="0.1.199-CI-20231009-115350" />
+		<PackageReference Include="ONE.Shared.MassTransit" Version="0.1.199-CI-20231009-115350" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\UserData\UserData.csproj" />
+		<ProjectReference Include="..\UserDomain\UserDomain.csproj" />
+	</ItemGroup>
+
+</Project>
